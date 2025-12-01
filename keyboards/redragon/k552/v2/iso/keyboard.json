@@ -19,6 +19,9 @@
         "nkro": true,
         "rgb_matrix": true
     },
+    "openrgb": {
+        "enabled": true
+    },
     "debounce": 5,
     "development_board": "sn32f240b_shared_matrix",
     "diode_direction": "ROW2COL",
@@ -33,30 +36,7 @@
     },
     "rgb_matrix": {
         "animations": {
-            "alphas_mods" : true,
-            "breathing" : true,
-            "digital_rain" : true,
-            "dual_beacon" : true,
-            "gradient_left_right" : true,
-            "gradient_up_down" : true,
-            "hue_breathing" : true,
-            "hue_pendulum" : true,
-            "hue_wave" : true,
-            "jellybean_raindrops" : true,
-            "multisplash" : true,
-            "rainbow_beacon" : true,
-            "rainbow_moving_chevron" : true,
-            "rainbow_pinwheels" : true,
-            "raindrops" : true,
-            "solid_reactive" : true,
-            "solid_reactive_cross" : true,
-            "solid_reactive_multicross" : true,
-            "solid_reactive_multinexus" : true,
-            "solid_reactive_multiwide" : true,
-            "solid_reactive_nexus" : true,
-            "solid_reactive_simple" : true,
-            "solid_reactive_wide" : true,
-            "solid_splash" : true
+            "openrgb_direct" : true
         },
         "driver": "sn32f2xx",
         "layout": [

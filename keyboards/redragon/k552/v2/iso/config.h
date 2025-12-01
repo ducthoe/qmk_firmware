@@ -16,3 +16,6 @@
 #pragma once
 
 #define RGB_MATRIX_LED_COUNT 90
+#define DRIVER_LED_TOTAL RGB_MATRIX_LED_COUNT
+
+#include "config_led.h"
