@@ -340,6 +340,13 @@
                 "enabled": {"type": "boolean"}
             }
         },
+        "openrgb": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {"type": "boolean"}
+            }
+        },
         "features": { "$ref": "#/definitions/features_config" },
         "indicators": {
             "type": "object",

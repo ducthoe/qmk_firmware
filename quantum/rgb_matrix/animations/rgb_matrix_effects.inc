@@ -1,4 +1,5 @@
 // Add your new core rgb matrix effect here, order determines enum order
+#include "openrgb_direct_anim.h"
 #include "solid_color_anim.h"
 #include "alpha_mods_anim.h"
 #include "gradient_up_down_anim.h"

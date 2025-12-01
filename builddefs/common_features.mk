@@ -648,6 +648,19 @@ ifeq ($(strip $(VIA_ENABLE)), yes)
     TRI_LAYER_ENABLE := yes
 endif
 
+ifeq ($(strip $(OPENRGB_ENABLE)), yes)
+    RAW_ENABLE := yes
+    SRC += $(QUANTUM_DIR)/openrgb.c
+    OPT_DEFS += -DOPENRGB_ENABLE
+    OPT_DEFS += -DRAW_EPSIZE=64
+endif
+
+ifeq ($(strip $(OPENRGB_ENABLE)), yes)
+  ifeq ($(strip $(VIA_ENABLE)), yes)
+    $(error OPENRGB_ENABLE and VIA_ENABLE cannot currently be 'yes' simultaneously)
+  endif
+endif
+
 ifeq ($(strip $(RAW_ENABLE)), yes)
     OPT_DEFS += -DRAW_ENABLE
     SRC += raw_hid.c
